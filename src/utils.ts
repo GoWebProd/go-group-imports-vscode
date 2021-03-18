@@ -41,7 +41,7 @@ export const resolveRootPackage = () => {
     .slice(0, -1)
     .join(path.sep);
 
-  return getRootDir(currentFolder, 5).then(rootDir => {
+  return getRootDir(currentFolder, 10).then(rootDir => {
     return rootDir
       .split(path.sep)
       .slice(-1)
